@@ -3,7 +3,7 @@ import { useGetUserProfileQuery } from '@/redux/user/userEndPoint';
 import { getUserInfo, } from '@/services/auth.service';
 import React, { useState } from 'react';
 import {Card, CardHeader, CardBody, CardFooter, Avatar, Button} from "@nextui-org/react";
-const page = () => {
+const ProfilePage: React.FC = () => {
   const user=getUserInfo() as any
   // console.log("user",user);
     
@@ -62,4 +62,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default ProfilePage;
