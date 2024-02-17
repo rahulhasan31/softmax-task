@@ -1,4 +1,4 @@
-'use client'
+"use Client"
 import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
 import { useGetMyEnrolledDataQuery, useGetStudentIDQuery, useGetUserProfileQuery } from "@/redux/user/userEndPoint";
 import { getUserInfo } from "@/services/auth.service";

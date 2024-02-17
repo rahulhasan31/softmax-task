@@ -3,7 +3,7 @@
 import { Layout} from 'antd';
 import Sidebar from '@/components/ui/Sidebar';
 import Contents from '@/components/ui/Contents';
-import { getUserInfo, isLoggedIn } from '@/services/auth.service';
+import {  isLoggedIn } from '@/services/auth.service';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -20,7 +20,7 @@ const DashboardLayout = ({children}:{children:React.ReactNode}) => {
       router.push('/signup')
     }
     setLoading(true)
-  },[router])
+  },[router, userLogin])
 
 
   if (!isLoading) {
