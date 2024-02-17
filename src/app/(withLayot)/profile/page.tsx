@@ -1,9 +1,9 @@
-"use Client"
+"use client"
 import { useGetUserProfileQuery } from '@/redux/user/userEndPoint';
 import { getUserInfo, } from '@/services/auth.service';
 import React, { useState } from 'react';
 import {Card, CardHeader, CardBody, CardFooter, Avatar, Button} from "@nextui-org/react";
-const ProfilePage: React.FC = () => {
+const ProfilePage = () => {
   const user=getUserInfo() as any
   // console.log("user",user);
     
