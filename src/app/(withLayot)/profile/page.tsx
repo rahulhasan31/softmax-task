@@ -1,4 +1,5 @@
 "use client"
+
 import { useGetUserProfileQuery } from '@/redux/user/userEndPoint';
 import { getUserInfo, } from '@/services/auth.service';
 import React, { useState } from 'react';
