@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="flex  flex-col items-start justify-start xl:justify-center xl:space-x-8 xl:flex-row">
             <div className="flex justify-start items-center space-x-4">
               <div className="cursor-pointer w-12">
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_5_marketing_svg1.svg" alt="logo" />
+                <img src="https://i.ibb.co/mFrZxds/download-removebg-preview.png" alt="logo" />
               </div>
-              <p className="w-60 text-xl xl:text-2xl font-semibold leading-normal text-white">The North</p>
+              <p className="w-60 text-xl xl:text-2xl font-semibold leading-normal text-white">Softmax Online School </p>
             </div>
             <div className="mt-12 xl:mt-0 grid grid-cols-1 sm:grid-cols-3 gap-y-12 sm:gap-y-0 w-full md:w-auto sm:gap-x-20 md:gap-x-28 xl:gap-8">
               <div className="sm:w-40 md:w-auto xl:w-72 flex justify-start items-start flex-col space-y-6">
@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-12 flex  xl:justify-between xl:flex-row flex-col-reverse items-center xl:items-start w-full ">
-            <p className="mt-10 md:mt-12 xl:mt-0 text-sm leading-none text-white">2020 The Good Company. All Rights Reserved</p>
+            <p className="mt-10 md:mt-12 xl:mt-0 text-sm leading-none text-white">2020 The Softmax Company. All Rights Reserved</p>
             <div className="mt-10 md:mt-12 xl:mt-0 md:flex-row flex-col flex md:justify-center w-full md:w-auto justify-start items-start space-y-4 md:space-y-0 md:items-center md:space-x-4 xl:space-x-6">
               <button className="text-base leading-none text-white hover:text-gray-300">
                 Terms of service
