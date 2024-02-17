@@ -2,12 +2,11 @@
 import { useForm, SubmitHandler } from "react-hook-form"
 import React, { useState } from 'react';
 import {Input} from "@nextui-org/react";
-import { useCreateUserMutation, useLoginUserMutation } from "@/redux/user/userEndPoint";
+import {  useLoginUserMutation } from "@/redux/user/userEndPoint";
 import { EyeSlashFilledIcon } from "@/components/ui/EyeSlashFilledIcon";
 import { EyeFilledIcon } from "@/components/ui/EyeFilledIcon";
-import { getUserInfo, isLoggedIn, isSignUp, isUser, storeCookies, storeUserInfo } from "@/services/auth.service";
+import {  isSignUp,  storeCookies, storeUserInfo } from "@/services/auth.service";
 import { useRouter } from "next/navigation";
-import { useEffect } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 type Inputs = {
@@ -24,11 +23,11 @@ type InputsLogin = {
 }
 
 const LoginPage = () => {
-    const [createUser,{isSuccess}]=useCreateUserMutation()
+   
     const [loginUser,]=useLoginUserMutation()
-    const [passError, setPassError]=useState('')
-    const [isLogin, setisLogin]=useState<boolean>(true)
-    console.log(passError);
+  
+    // const [isLogin, setisLogin]=useState<boolean>(true)
+    
     const [isVisible, setIsVisible] = useState(false);
    console.log( isSignUp());
     const router=useRouter()
@@ -94,14 +93,13 @@ const LoginPage = () => {
                   <span className="text-teal-accent-400"></span>
                 </h2>
                 <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                স্বপ্ন দেখি সুখী, সমৃদ্ধ, বেকারমুক্ত, প্রগতিশীল এক বাংলাদেশ গড়ার।
+                স্বপ্ন দেখি সুখী সমৃদ্ধ বেকারমুক্ত প্রগতিশীল এক বাংলাদেশ গড়ার।
                 </p>
              
               </div>
               <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
 
-                {
-                  isLogin?<>
+            
                    <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                    Login Now
@@ -116,7 +114,7 @@ const LoginPage = () => {
                         htmlFor="numberd"
                         className="inline-block mb-1 font-medium"
                       >
-                        Numberd
+                        Number
                       </label>
                       <input
                       {...register("number")}
@@ -140,7 +138,7 @@ const LoginPage = () => {
       {...register('password')}
       placeholder="password"
       isRequired
-      type={isVisible ? 'text' : 'password'} // Define type conditionally based on isVisible state
+      type={isVisible ? 'text' : 'password'}
       endContent={
         <button className="focus:outline-none" type="button" onClick={toggleVisibility}>
           {isVisible ? (
@@ -155,7 +153,7 @@ const LoginPage = () => {
     />
                     </div>
                
-                    <h1>Don't have a Accout <Link className="text-blue-400"  href={'/signup'} color="primary" >SignUp</Link></h1>
+                    <h1>Dont have a Accout <Link className="text-blue-400"  href={'/signup'} color="primary" >SignUp</Link></h1>
                     <div className="mt-4 mb-2 sm:mb-4">
                       <button
                         type="submit"
@@ -169,10 +167,7 @@ const LoginPage = () => {
 
       
                 </div>
-                  </>:<>
-                 
-                  </>
-                }
+                
                
               </div>
             </div>

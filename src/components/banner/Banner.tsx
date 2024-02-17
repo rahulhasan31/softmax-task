@@ -68,7 +68,8 @@ const Banner = () => {
           </div>
         </div>
         <div>
-          <img
+          <Image
+          width={500} height={500}
             className=" w-full h-56 rounded shadow-lg sm:h-96"
             src="https://i.ibb.co/7X6PVXG/364804474-579740664374726-3789776812635313749-n.jpg"
             alt=""
