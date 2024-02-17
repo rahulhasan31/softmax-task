@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Banner = () => {
@@ -12,7 +13,7 @@ const Banner = () => {
             className="inline-block mb-5 text-green-500"
           >
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                <img className="w-10 h-10 text-deep-purple-accent-400" src="https://i.ibb.co/mFrZxds/download-removebg-preview.png" alt=""  />
+                <Image width={500} height={500}  className="w-10 h-10 text-deep-purple-accent-400" src="https://i.ibb.co/mFrZxds/download-removebg-preview.png" alt=""  />
               
             </div>
           </a>

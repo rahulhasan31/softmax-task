@@ -9,6 +9,7 @@ import { getUserInfo, isLoggedIn, isSignUp, isUser, storeCookies, storeUserInfo 
 import { useRouter } from "next/navigation";
 import { useEffect } from 'react';
 import Link from "next/link";
+import Image from "next/image";
 type Inputs = {
     name: string
     number: string
@@ -78,10 +79,10 @@ const LoginPage = () => {
    
     return (
         <div className="relative ">
-        <img
-          src="https://www.connectionsacademy.com/content/dam/pvs/ca/resource-hub/headers/Header--how-virtual-and-hybrid-schools-track-attendance.jpg"
+        <Image 
+          alt="Description" width={500} height={500} src="https://www.connectionsacademy.com/content/dam/pvs/ca/resource-hub/headers/Header--how-virtual-and-hybrid-schools-track-attendance.jpg"
           className="absolute inset-0 object-cover w-full h-full"
-          alt=""
+          
         />
         <div className="relative bg-gray-900 bg-opacity-75 ">
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

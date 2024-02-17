@@ -4,7 +4,7 @@ import { useGetMyEnrolledDataQuery, useGetStudentIDQuery, useGetUserProfileQuery
 import { getUserInfo } from "@/services/auth.service";
 
 
-const page = () => {
+const MyCourse = () => {
     const user=getUserInfo() as any
     // console.log("user",user);
       
@@ -56,4 +56,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default MyCourse;
